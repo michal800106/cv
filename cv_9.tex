@@ -1,4 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables:
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-engine: xetex_sh
+%%% TeX-master: t
+%%% End:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Plasmati Graduate CV
 % LaTeX Template
 % Version 1.0 (24/3/13)
@@ -17,17 +25,16 @@
 % The main document font is called Fontin and can be downloaded for free
 % from here: http://www.exljbris.com/fontin.html
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\documentclass[a4paper,9pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+\setmainfont[SmallCapsFont = Comfortaa]{Adam} % Main document font
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
@@ -48,21 +55,21 @@
 
 \pagestyle{empty} % Removes page numbering
 
-\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+\font\fb=''[cmr9]'' % Change the font of the \LaTeX command under the skills section
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge John \textsc{Smith}}\bigskip\par} % Your name
+\par{\centering{\Huge Michał Zielonka}\bigskip\par} % Your name
 
 \section{Personal Data}
 
 \begin{tabular}{rl}
-\textsc{Place and Date of Birth:} & Canada  | 20 November 1987 \\
-\textsc{Address:} & 123 Broadway, City, State, Canada \\
-\textsc{Phone:} & +1 111 1112\\
-\textsc{email:} & \href{mailto:john@smith.com}{john@smith.com}
+\textsc{Place and Date of Birth:} & Poland, 6 January 1980 \\
+\textsc{Address:} & Północna 2, 95-006 Bukowiec, Łódzkie, Poland \\
+\textsc{Phone:} & +48 505-656-611 \\
+\textsc{email:} & \href{mailto:zielonka.michal@gmail.com}{zielonka.michal@gmail.com}
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -72,9 +79,14 @@
 \section{Work Experience}
 
 \begin{tabular}{r|p{11cm}}
-\emph{Current} & 1\textsuperscript{st} year Analyst at \textsc{Lehman Brothers}, London \\
-\textsc{Mar 2012} & \emph{Commodities Structured Trading}\\ 
-& \footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\
+\emph{Current} & 1\textsuperscript{st} year Devolopment at \textsc{Fujitsu Technology Solutions Sp. z o.o}, Łódź \\
+\textsc{Apr 2015} & \footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2013 - Apr 2015} & Development at \textsc{Samsung Electronics Polska}, Łódź \\
+& \textbf{Project:} Developing applications for Tizen platform
+Role in the project: technical leader, developer, administrator
+Tools and technologies: git, cmake, C++, C, Python, EFL, gbs, java CDC\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
@@ -170,62 +182,10 @@ Football, Travelling
 
 %----------------------------------------------------------------------------------------
 
-\newpage
-
-%----------------------------------------------------------------------------------------
-%	GRADE TABLES
-%----------------------------------------------------------------------------------------
-
-\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
-
-\begin{center}
-\begin{tabular}{lcc}
-\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-Corporate Finance (Valuation) & 25 & 6\\
-Financial Statement Analysis & 28 & 6\\
-Statistics & 27 & 6\\
-Theory of Finance & 26 & 6\\
-Quantitative Methods for Finance & 30 & 6\\
-Econometrics & 24 & 6\\
-Derivatives & 31 & 6\\
-Management of Financial and Insurance Companies & 30 & 6\\
-Business Law & 31 & 6\\
-Investment Banking	& 28 & 6\\ \\		
-Behavioral Models for Economics and Finance	 & 29 & 6\\
-Numerical Methods for Finance & 29 & 6\\
-Advanced Derivatives & 30 & 6\\
-Fixed Income (Advanced Methods) & 30 & 6\\ \\
-English Language & 30 &	4\\
-French Language & 31 &	4\\	
-Internship & & 8\\		
-Final Thesis & & 20\\	
-& Total & 120\\\cline{2-3}
-&\textsc{Gpa}&\textbf{8.0}
-\end{tabular}
-\end{center}
-\bigskip
-\hrule
-\bigskip
-
-%------------------------------------------------
-
-\bigskip
-
-\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
-
-\begin{center}
-\begin{tabular}{lcc}
-\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
-\hline
-Corporate Financial Strategy & A & 4\\
-Derivatives & A & 4\\
-Money, Credit, and Banking & A & 4\\
-Business Strategy & A- & 3.5\\
-& &\\\cline{2-3}
-& \textsc{Gpa} & \textbf{3.875}
-\end{tabular}
-\end{center}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% TeX-master: t
+% End:
