@@ -39,9 +39,27 @@
 
 
  
-\setromanfont{Roboto}
-\setsansfont{CaviarDreams}
-\setmonofont{DejaVuSansMono}
+\setromanfont[
+Extension = .ttf,
+BoldFont = *-Bold,
+ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic
+]
+{DejaVuSerifCondensed}
+
+\setsansfont[
+Extension = .ttf,
+BoldFont = *_Bold,
+ItalicFont = *_Italic,
+BoldItalicFont = *_BoldItalic
+]{CaviarDreams}
+
+\setmonofont[
+Extension = .ttf,
+BoldFont = *-Bold,
+ItalicFont = *-Oblique,
+BoldItalicFont = *-BoldOblique
+]{DejaVuSansMono}
 
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
@@ -59,6 +77,8 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
+\usepackage{longtable}
+
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -69,13 +89,13 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge Michał Zielonka}\bigskip\par} % Your name
+\par{\centering{\Huge \textsf{Michał Zielonka}}\bigskip\par} % Your name
 
 \section{Personal Data}
 
 \begin{tabular}{rl}
 \textsc{Place and Date of Birth:} & Poland, 6 January 1980 \\
-\textsc{Address:} & Północna 2, 95-006 Bukowiec, Łódzkie, Poland \\
+\textsc{Address:} & Północna 2, 95-006 Bukowiec, Poland \\
 \textsc{Phone:} & +48 505-656-611 \\
 \textsc{email:} & \href{mailto:zielonka.michal@gmail.com}{zielonka.michal@gmail.com}
 \end{tabular}
@@ -86,8 +106,8 @@
 
 \section{Work Experience}
 
-\begin{tabular}{r|p{11cm}}
-\emph{Current} & 1\textsuperscript{st} year Devolopment at \textsc{Fujitsu Technology Solutions Sp. z o.o}, Łódź \\
+\begin{longtable}{r|p{11cm}}
+\emph{Current} & 1\textsuperscript{st} year Development at \textsc{Fujitsu Technology Solutions Sp. z o.o}, Łódź \\
 \textsc{Apr 2015} & \textbf{Project:} Developing applications for Openstack platform\\
 & \textbf{Role in the project:} developer\\
 & \textbf{Tools and technologies:} git, Python, ansible\\
@@ -99,17 +119,63 @@
 & \textbf{Tools and technologies:} git, cmake, C++, C, Python, EFL, gbs, java CDC\\
 \multicolumn{2}{c}{} \\
 
-%------------------------------------------------
-
-\textsc{Jul 2010-Oct 2011} & Summer Intern at \textsc{Intech Inc}, Chicago \emph{}\\
-& \footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\
+\textsc{May 2009 - Jul 2013} & Development and maintenance at Bank Pekao S.A., Łódź\\
+& \textbf{Project:} Porting and maintaining of internet platform.\\
+& \textbf{Role in the project:} maintainer, developer, administrator\\
+& \textbf{Tools and techologies:} Java, XSLT, XSL-FO, Perl, C++, HPUX, Python, Haskel, Oracle\\
 \multicolumn{2}{c}{} \\
 
-%------------------------------------------------
+\textsc{Nov 2008 - May 2009} & Development at Cybercom Poland Sp. z o.o., Łódź\\
+& \textbf{Project:} Application “OnlineCv”.\\
+& \textbf{Role in the project:} developer.\\
+& \textbf{Tools and technologies:} Java, XSLT, XSL-FO, JSP, Servlets, PHP5, mysql.\\
+\multicolumn{2}{c}{} \\
 
-\textsc{Jan-Mar 2011} & Computer Technician at \textsc{Buy More}, Burbank \emph{}\\
-& \footnotesize{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
-\end{tabular}
+\textsc{Mar 2008 - Nov 2008} & Development at Cybercom Poland Sp. z o.o., Łódź\\
+& \textbf{Project:} Internet application for managing orders ( internal project ).\\
+& \textbf{Role in the project:} developer.\\
+& \textbf{Tools and technologies:} mysql, Javascript, CSS, AJAX, PHP4.\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Mar 2008 - Nov 2008} & Development at Cybercom Poland Sp. z o.o., Łódź\\
+& \textbf{Project:} BSS program with SOAP protocol.\\
+& \textbf{Role in the project:} RA, NPM tester and developer.\\
+& \textbf{Tools and technologies:} Java, Subscription tool, SqlDeveloper, eclipse, Oracle\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2006 - Mar 2008} & Development at Comarch S.A., Łódź\\
+& \textbf{Project:} XPCOM component for browser compability with Gecko engine.\\
+& \textbf{Architectures:} ARMEL and i386.\\
+& \textbf{Role in the project:} developer, \\
+& \textbf{Tools and technologies:} C++, JavaScript, XPCOM, XML, SaxParser, CppUnit.\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2006 - Mar 2008} & Development at Comarch S.A., Łódź\\
+& \textbf{Project:} Program for automatic creation and execution tests.\\
+& \textbf{Role in the project:} developer.\\
+& \textbf{Tools and technologies:} PHP5, AJAX, JSUnit, XSLT, DOM, JavaScript.\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2006 - Mar 2008} & Development at Comarch S.A., Łódź\\
+& \textbf{Project:} Program for converting data between QualityCenter application and xml files.\\
+& \textbf{Role in the project:} developer.\\
+& \textbf{Tools and technologies:} python, pythoncom, wincom, pywin.\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2006 - Oct 2006} & Development at Comarch S.A., Łódź\\
+& \textbf{Project:} Program for managing invoices.\\
+& \textbf{Role in the project:} developer and project manager.\\
+& \textbf{Tools and technologies:} Jboss, JbossRule, Spring, JSP, Oracle, mysql.\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2005 - Jul 2006} & Development at Emerson, Piotrków Tryb\\
+& \textbf{Project:} Programming tools for converting data. For example from xml to csv, other xml, pdf, and data base.\\
+& \textbf{Role in the project:} developer.\\
+& \textbf{Tools and technologies:} C++, perl, postgresql, unix, java, oracle.\\
+\multicolumn{2}{c}{} \\
+
+\end{longtable}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -117,7 +183,7 @@
 
 \section{Education}
 
-\begin{tabular}{rl}	
+\begin{longtable}{rl}	
 \textsc{July} 2012 & Master of Commerce in \textsc{Finance}, \textbf{The University of California}, Berkeley\\
 & 110/110 \small\emph{First Class Honours} | Major: Quantitative Finance\\
 & Thesis: ``Money is the Root of All Evil - Or is it?'' | \small Advisor: Prof. James \textsc{Smith}\\
@@ -140,7 +206,7 @@
 %------------------------------------------------
 
 \textsc{July} 2006& \textbf{Liceo Classico ``E. Duni''}, Matera | Final Grade: 100/100
-\end{tabular}
+\end{longtable}
 
 %----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
